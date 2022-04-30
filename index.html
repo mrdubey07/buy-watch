@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newindex.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Shop Watch</title>
+  </head>
+  <body>
+    <header>
+      <div class="background">
+        <div class="navigation">
+          <div class="company-name">
+            <h1>WATCHES</h1>
+            <div class="hamburger-menu">
+              <!-- CHECKBOX -->
+              <label for="nav-mobile" class="nav-mobile-label"
+                ><i id="bars-nav" class="fa fa-bars"></i
+              ></label>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="nav-mobile"
+                onchange="checkedcheck()"
+              />
+            </div>
+          </div>
+          <div class="nav-links">
+            <ul id="nav-links-ul">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">WATCHES</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li>
+                <a href="#" onclick="showCart()"
+                  ><i class="fa fa-shopping-cart"></i
+                  ><span class="count">0</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="image-container">
+            <img src="/watch.png" alt="" id="image" />
+          </div>
+          <div class="image-side-text">
+            <h1>BUY WATCH</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              doloribus odit aliquid nulla quaerat. Omnis labore voluptatibus
+              neque! Reprehenderit maiores doloremque sed modi ut ad dignissimos
+              excepturi ipsum optio, nisi sint sequi illo nulla eaque soluta
+              iusto tempora officiis accusamus nostrum illum ea. Voluptas quia
+              doloremque officiis perferendis harum provident quasi! Quos
+              incidunt aperiam, tempora est qui,
+            </p>
+            <div class="image-side-button">
+              <a href="#">Read More</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="card-container"></section>
+
+    <section class="section-cart-container">
+      <div class="cart-container">
+        <input type="checkbox" name="checkbox" id="closecart" />
+        <label for="closecart" class="closeCart" onclick="closeCart()">X</label>
+        <p id="para-items"></p>
+
+        <div class="cart-items"></div>
+
+        <div class="total-price">
+          <p>Total : <span id="total-price-here"></span></p>
+          <div class="buy-checkout">
+            <button class="buy-now checkout"">
+              Checkout
+            </button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="newindex.js"></script>
+</html>
